@@ -33,6 +33,8 @@ $rs = mysqli_query($conn,$sql);
     <tr>
         <th>รหัสภาค</th>
         <th>ชื่อภาค</th>
+        <th>ลบ</th>
+
     </tr>
 
 <?php
