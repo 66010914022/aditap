@@ -21,6 +21,7 @@ while ($data3 = mysqli_fetch_array($rs3)){
 }
 ?>
     
+    
     <option value="xxx"><?php echo $data3['r_id'];?><?php echo $data3['r_name'];?>
 ?></option>
 
