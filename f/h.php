@@ -2,27 +2,25 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>อดิเทพ จำเริญเจือ (อาร์ม)</title>
+<title>อดิเทพ จำเริญเจือ (อาร์ม) 66010914022</title>
+<style>
+    
+</style>
 </head>
 
 <body>
-<h1>งาน k  อดิเทพ จำเริญเจือ (อาร์ม)</h1>
-
-<button onclick="showImage('1.jpg', this)" 
-        style="background-color:green; color:white; padding:10px; border:none;">
-    เปิดรูปที่ 1
-</button>
-
-<button onclick="showImage('2.jpg', this)" 
-        style="background-color:orange; color:white; padding:10px; border:none;">
-    เปิดรูปที่ 2
-</button>
-
-<script>
-function showImage(imgSrc, btn){
-    btn.innerHTML = "<img src='" + imgSrc + "' width='150'>";
+<h1> อดิเทพ จำเริญเจือ (อาร์ม) 66010914022 </h1>
+<form method="post" action="">
+            รหัสนิสิต <input type="number"  name="a" autofocus required>
+            <button type="submit" name="Submit">OK</button>
+        </form>
+<hr>
+<?php
+if(isset($_POST['Submit'])) {
+    $id = $_POST['a'];
+    $y = substr($id,0,2);
+    echo "<img src='http://202.28.32.211/picture/student/{$y}/{$id}.jpg' widht='600'>";
 }
-</script>
- 
+?>
 </body>
 </html>
