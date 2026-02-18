@@ -1,27 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>อดิเทพ จำเริญเจือ (อาร์ม)</title>
+    <title>ปุ่มแสดงรูป</title>
 </head>
-
 <body>
-<h1>66010914022 อดิเทพ จำเริญเจือ (อาร์ม)</h1>
-<hr>
-<form method= "post" action="">
-    รหัสนิสิต<input type ="number"  name="a" autofocus required>
-    <button  type ="submit"name="Submit" >OK</button>
-</form>
-<hr>
 
+<button onclick="showImage('image1.jpg', this)" 
+        style="background-color:green; color:white; padding:10px; border:none;">
+    เปิดรูปที่ 1
+</button>
 
-<?php
-  if(isset($_POST["Submit"])){
-    $id= $_POST['a'];
-    $y= substr($id,0,2);
-    echo "<img src='http://202.28.32.211/picture/student/{$y}/{$id}.jpg'width ='600'>"; 
+<button onclick="showImage('image2.jpg', this)" 
+        style="background-color:orange; color:white; padding:10px; border:none;">
+    เปิดรูปที่ 2
+</button>
 
+<script>
+function showImage(imgSrc, btn){
+    btn.innerHTML = "<img src='" + imgSrc + "' width='150'>";
 }
-?>
+</script>
+
 </body>
 </html>
